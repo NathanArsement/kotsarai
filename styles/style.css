@@ -16,7 +16,7 @@ img{
 #header div#section:after, #header ul:after, #content div:after, #content div ul.services:after, #footer div:after, #footer div div.section ul:after{
 	clear:both;
 	content:" ";
-	display:block;
+	
 	font-size:0;
 	height:0;
 	visibility:hidden;
@@ -38,8 +38,24 @@ img{
 	padding:0;
 	width:100%;
 }
+ul{
+	display: flex;
+	justify-content: left;
+	
+	flex-direction: row;
+	
+}
+@media (max-width:800px) {
+	ul{
+		flex-direction: column;
+	}
+	li{
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+	}
+}
 li{
-	float:left;
+	
 	padding-left:4%;
 	padding-right: 4%;
 	background-color: #cad7e0;
@@ -57,8 +73,8 @@ li:where(:hover, :focus-visible) {
 }
 #header ul li a{
 	color:#28475C;
-	display:flexbox;
-	
+	display: flex;
+	justify-content: left;
 	line-height:2vw;
 	
 	text-align:center;
@@ -76,4 +92,8 @@ li:where(:hover, :focus-visible) {
 	display: flex;
 	align-items: center;
 	background-color: aliceblue;
+}
+.slideshow{
+	display: flex;
+	justify-content: center;
 }
