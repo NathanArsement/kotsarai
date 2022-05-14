@@ -1,5 +1,5 @@
 body{
-	display:block;
+	
 	color:#585858;
 	font-family:Arial;
 	font-size:14px;
@@ -23,7 +23,7 @@ img{
 }
 #page{
 	
-	width:100vw;
+	width:100%;
 }
 #header{
 	
@@ -35,12 +35,12 @@ img{
 #header ul{
 	list-style:none;
 	padding:0;
-	width:120vw;
+	width:100%;
 }
 li{
 	float:left;
-	padding-left:5vw;
-	padding-right: 5vw;
+	padding-left:4.7%;
+	padding-right: 4.7%;
 	background-color: #cad7e0;
 }
 li {
@@ -57,7 +57,7 @@ li:where(:hover, :focus-visible) {
 #header ul li a{
 	color:#28475C;
 	display:flexbox;
-	font-size:14px;
+	font-size:1vw;
 	height:43px;
 	line-height:37px;
 	
