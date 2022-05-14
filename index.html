@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>EMS Kotsarai</title>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+  <title>EMS Kotsarai</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
-<div id="page">
-  <div id="heading">
-    <img src="images/bsf.jpg" style="width: 11%;">
-    <h1>EMS KOTSARAI</h1>
+  <div id="page">
+    <div id="heading">
+      <img src="images/bsf.jpg" style="width: 11%;">
+      <h1>EMS KOTSARAI</h1>
+    </div>
+    <div id="header">
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="training-courses.html">Training Courses</a></li>
+        <li><a href="school-calendar.html">School Calendar</a></li>
+        <li><a href="contact-us.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="slideshow">
+      <div class="w3-content w3-section" style="max-width:100vw; align-content: flex-start;">
+        <img class="mySlides w3-animate-top" src="images/img1.jpeg" style="width:100vw; height: 50vh;">
+        <img class="mySlides w3-animate-bottom" src="images/img2.jpeg" style="width:100vw; height: 50vh;">
+        <img class="mySlides w3-animate-top" src="images/img4.jpeg" style="width:100vw; height: 50vh;">
+        <img class="mySlides w3-animate-bottom" src="images/img5.jpeg" style="width:100vw; height: 50vh;"><img class="mySlides w3-animate-top" src="images/img1.jpeg" style="width:100vw; height: 50vh;">
+        <img class="mySlides w3-animate-bottom" src="images/img6.jpeg" style="width:100vw; height: 50vh;">
+      </div>
+    </div>
   </div>
-  <div id="header">
-    <ul>
-      <li class="current"><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-      <li><a href="training-courses.html">Training Courses</a></li>
-      <li><a href="school-calendar.html">School Calendar</a></li>
-      <li><a href="contact-us.html">Contact us</a></li>
-    </ul>
-  </div>
-</div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+  </script>
 </body>
+
 </html>
