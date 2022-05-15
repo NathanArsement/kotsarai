@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EMPS Kotsarai</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="images/fav.png">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/gallery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(0, 255, 21); font-size: x-large;">
+    <div id="page">
+        <div id="heading">
+            <img src="images/bsf.jpg" style="width: 100%;">
+
+        </div>
+        <div id="header">
+            <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="admission.html">Admission</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Features
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Mid Day Meal</a>
+                        <a href="#">Bal Adhikar</a>
+                        <a href="#">Mission Prerna</a>
+                        <a href="#">Nipun Bharat</a>
+                        <a href="#">Nishulk Vitran</a>
+                    </div>
+                </div>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="w3-content w3-section w3-display-container"
+                style="align-content: flex-start;justify-content: flex-start; ">
+                <img class="mySlides w3-animate-left" src="images/img1.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img2.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img4.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img5.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img3.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img6.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img7.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img8.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img9.jpeg">
+                <img class="mySlides w3-animate-left" src="images/img10.jpeg">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="main" style="display:flex; flex-direction:row">
+            <h1 style="font-size:xx-large ; font-weight: 600; font-variant: small-caps; padding-left: 45%;">
+                <center><u>Gallery</u></center>
+            </h1>
+            <div class="row">
+                <div class="column">
+                    <img id="myImg" src="images/gal (1).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (2).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (5).jpeg" alt="">
+                </div>
+
+
+                <div class="column">
+                    <img id="myImg" src="images/gal (3).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (4).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (7).jpeg" alt="">
+                </div>
+
+
+                <div class="column">
+                    <img id="myImg" src="images/gal (6).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (8).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (9).jpeg" alt="">
+                </div>
+                <div class="column">
+                    <img id="myImg" src="images/gal (10).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (3).jpeg" alt="">
+
+                    <img id="myImg" src="images/gal (5).jpeg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact">
+        <a id="contact"></a>
+        <h2>Contact Us:</h2>
+        <div style="display: flex; justify-content:flex-start; width: 100vw; flex-wrap: wrap;">
+            <div style="flex:60%">
+                <table style="margin-left: 20%; font-size: large;">
+                    <tr>
+                        <td>Principal:</td>
+                        <td>Shalley Arora</td>
+                    </tr>
+                    <tr>
+                        <td>Contact No.</td>
+                        <td>
+                            9956685116
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp No.</td>
+                        <td>
+                            9956685116
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Youtube</td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-Mail
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="flex:40%; padding-right:10%; padding-left: 5%;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.6322921632527!2d82.05987998810063!3d26.75939709894446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0ffb9e1313b7%3A0x6e3409cb2e2dd7b6!2z4KSq4KWN4KSw4KS-4KSl4KSu4KS_4KSVIOCkteCkv-CkpuCljeCkr-CkvuCksuCkryDgpJXgpYvgpJ_gpLjgpLDgpL7gpK8!5e0!3m2!1sen!2sus!4v1652606637075!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    style="min-width: 500px;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        var myIndex = 0;
+        // carousel();
+
+
+        var slideIndex = 1;
+        showDivs();
+
+        function plusDivs(n) {
+            slideIndex += n;
+            showDivs()
+        }
+
+        function currentDiv(n) {
+            slideIndex = n;
+            showDivs()
+        }
+
+        function showDivs() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (slideIndex > x.length) { slideIndex = 1 }
+            if (slideIndex < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+            setTimeout(addSlide, 5000);
+        }
+        function addSlide() {
+            plusDivs(1)
+        }
+        // function carousel() {
+        //     var i;
+        //     var x = document.getElementsByClassName("mySlides");
+        //     for (i = 0; i < x.length; i++) {
+        //       x[i].style.display = "none";
+        //     }
+        //     myIndex++;
+        //     if (myIndex > x.length) { myIndex = 1 }
+        //     x[myIndex - 1].style.display = "block";
+        //     setTimeout(carousel, 5000);
+
+        //   }
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
