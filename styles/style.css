@@ -223,20 +223,25 @@ li:where(:hover, :focus-visible)~a {
 	flex:60%;
 	display: flex;
 	justify-content: left;
-	word-wrap: break-word;
+
 	
 }
 #principal_image{
 	height: 20%;
-	border-radius: 10%;
+	border-radius: 100%;
 	padding: 15px 15px 15px 15px;
 	position: sticky;
 	top: 0;
 }
-@media (max-width:800px) {
+@media screen {
 	#principal_image{
-		height:5%
+		height:20vh
 		
+	}
+	.principal_msg{
+		word-wrap: break-word;
+		font-size: medium;
+
 	}
 }
 .youtube{
@@ -258,4 +263,8 @@ td{
 tr{
 	border-left: 2px;
 	border-color: white;
+}
+.principal_msg{
+	font-size: large;
+	
 }
