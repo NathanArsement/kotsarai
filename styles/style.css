@@ -1,6 +1,6 @@
 .navbar {
 	overflow: hidden;
-	background-color: #333;
+	background-color: navy;
 	font-family: Arial, Helvetica, sans-serif;
 	display: flex;
 		flex-direction: row;
@@ -94,11 +94,7 @@ img{
 	height:0;
 	visibility:hidden;
 }
-#page{
-	
-	
-	width:100%;
-}
+
 #header{
 	
 	height:auto;
@@ -213,11 +209,13 @@ li:where(:hover, :focus-visible)~a {
 	}
 }
 .main{
-	background-color: pink;
+	background-color: navy;
 	display: flex;
 	flex-direction: row;
 	margin: 2%;
 	flex-wrap: wrap;
+	color: white;
+	justify-content: center;
 }
 .principal{
 	flex:60%;
@@ -267,4 +265,7 @@ tr{
 .principal_msg{
 	font-size: large;
 	
+}
+#contact {
+	color: white;
 }
