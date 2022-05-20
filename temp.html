@@ -24,9 +24,15 @@
         </div>
         <div id="header">
             <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="admission.html">Admission</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('index.html','_self')">Home</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('about.html','_self')">About Us</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('admission.html','_self')">Admission</button>
+                </div>
                 <div class="dropdown">
                     <button class="dropbtn" onclick="myFunction()">Features
                         <i class="fa fa-caret-down"></i>
@@ -39,8 +45,12 @@
                         <a href="nishulkvitran.html">Nishulk Vitran</a>
                     </div>
                 </div>
-                <a href="gallery.html">Gallery</a>
-                <a href="#contact">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('gallery.html','_self')">Gallery</button>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="window.open('#contact','_self')">Contact Us</button>
+                </div>
             </div>
         </div>
         <div class="slideshow">

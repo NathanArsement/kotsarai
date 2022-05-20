@@ -14,6 +14,163 @@
       display: none;
     }
   </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <style>
+    html,
+    body {
+      min-height: 100%;
+    }
+  
+    body,
+    div,
+    form,
+    input,
+    select,
+    p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+    }
+  
+    body {
+      background: url("/uploads/media/default/0001/01/b5edc1bad4dc8c20291c8394527cb2c5b43ee13c.jpeg") no-repeat center;
+      background-size: cover;
+    }
+  
+    h1,
+    h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  
+    h2 {
+      margin: 0 0 0 8px;
+    }
+  
+    .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+    .left-part,
+    form {
+      padding: 25px;
+    }
+  
+    .left-part {
+      text-align: center;
+    }
+  
+    .fa-graduation-cap {
+      font-size: 72px;
+    }
+  
+    form {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    input,
+    select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    input::placeholder {
+      color: #eee;
+    }
+  
+    option:focus {
+      border: none;
+    }
+  
+    option {
+      background: black;
+      border: none;
+    }
+  
+    .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+    }
+  
+    .checkbox a {
+      color: #26a9e0;
+    }
+  
+    .checkbox a:hover {
+      color: #85d6de;
+    }
+  
+    .btn-item,
+    button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: none;
+      background: #26a9e0;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+    }
+  
+    .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    button:hover,
+    .btn-item:hover {
+      background: #85d6de;
+    }
+  
+    @media (min-width: 568px) {
+  
+      html,
+      body {
+        height: 100%;
+      }
+  
+      .main-block {
+        flex-direction: row;
+        height: calc(100% - 50px);
+      }
+  
+      .left-part,
+      form {
+        flex: 1;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 
 <body style="background-color: rgb(0, 255, 21); font-size: x-large;">
@@ -24,9 +181,15 @@
     </div>
     <div id="header">
       <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="admission.html">Admission</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.open('index.html','_self')">Home</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.open('about.html','_self')">About Us</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.open('admission.html','_self')">Admission</button>
+        </div>
         <div class="dropdown">
           <button class="dropbtn" onclick="myFunction()">Features
             <i class="fa fa-caret-down"></i>
@@ -36,11 +199,15 @@
             <a href="baladhikar.html">Bal Adhikar</a>
             <a href="prerna.html">Mission Prerna</a>
             <a href="nipunbharat.html">Nipun Bharat</a>
-            <a href="nishulkvitran.html">Nishulk Vitran</a>
+            <!-- <a href="nishulkvitran.html">Nishulk Vitran</a> -->
           </div>
         </div>
-        <a href="gallery.html">Gallery</a>
-        <a href="#contact">Contact Us</a>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.open('gallery.html','_self')">Gallery</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="window.open('#contact','_self')">Contact Us</button>
+        </div>
       </div>
     </div>
     <div class="slideshow">
@@ -73,7 +240,30 @@
         </div>
       </div>
     </div>
-    
+    <div class="main">
+      <form id=”contact” onsubmit="return postToGoogle();" onsubmit="window.open('index.html', '_self')">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" id="name" placeholder="Full name" name="entry.808827709">
+          <input name="entry.468242047" type="text" placeholder="Date Of Birth" onfocus="(this.type='date')" id="DOB">
+          
+          <input name="entry.1866964556" type="text" id="fathername" placeholder="Father's Name">
+          <input name="entry.870993298" type="text" id="mothername" placeholder="Mother's Name">
+          <input name="entry.1101516884" type="number" id="contact" placeholder="Contact number">
+          <input name="entry.1659119098" type="number" id="aadhar" placeholder="Aadhar Number">
+          
+          
+          </select>
+        </div>
+        
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset" style="display:none;" id="reset"></button>
+      </form>
+    </div>
   </div>
     <div class="contact">
       <a id="contact"></a>
@@ -141,7 +331,54 @@
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      const form = document.getElementById('contact');
+
+        form.addEventListener('submit', function handleSubmit(event) {
+          event.preventDefault();
+
+          
+        });
+
+      function postToGoogle() {
+        var field1 = $("#name").val();
+        var field2 = $("#DOB").val();
+        var field3 = $("#fathername").val();
+        var field4 = $("#mothername").val();
+        var field5 = $("#contact").val();
+        var field6 = $("#aadhar").val();
+        $.ajax({
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdQ1UjSRqR8PR2-Qys6FqrFyeOef8gwArVCvnCh3zCPFUYCw/formResponse",
+
+          //add your google form generated numbers below which are also the 'names' of your inputs     
+          data: {
+            "entry.808827709": field1,
+            "entry.468242047": field2,
+            "entry.1866964556": field3,
+            "entry.870993298": field4,
+            "entry.1101516884": field5,
+            "entry.1659119098": field6
+          },
+
+          type: "POST",
+          dataType: "xml",
+          success: function (d) {
+            
+          },
+          error: function (x, y, z) {
+            document.getElementById("contact").reset();
+          }
+        });
+        
+        return false ;
+        
+      }
+    </script>
   <script>
+    let today = new Date().toISOString().substr(0, 10);
+      document.querySelector("#DOB").max = today;
     var myIndex = 0;
     // carousel();
 
